@@ -1,0 +1,208 @@
+/*-------------------------
+      font style start
+ -------------------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ /*--------------------------
+         font style end 
+  --------------------------*/
+/*---------------------------- 
+      common style start
+----------------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.color1{
+    color: white;
+}
+.color1:hover{
+    color: red;
+}
+.menu-area {
+    background-color: blue;
+    margin-bottom: 90px;
+    padding: 100px;
+}
+.menu-datils{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 105px;
+}
+.area-barrer img{
+    width: 500px;
+    height: 400px;  
+}
+.area-1{
+    font-size: 30px;
+}
+.font-icon {
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    background: #E02C6D;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    color: white;
+}
+.font-icon:hover{
+    background-image: linear-gradient(orange, red);
+}
+/*-------------------------------
+       common style end 
+-------------------------------- */
+/*------------------------------- 
+    players area style start
+--------------------------------- */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px; 
+    grid-column-gap: 35px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.blog:hover .thumbnail{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
+
+ .blog{
+     overflow: hidden;
+     border-radius: 15px;
+ }
+.thumbnail img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.blog-title:hover{
+    color: chartreuse;
+}
+
+.blog-title{
+    font-size: 30px;
+}
+.blog-author{
+    font-size: 16px;
+}
+/*-----------------------------------
+        players area style end 
+---------------------------------- */
+/* --------------------------------------
+    highlights match area style start
+-------------------------------------- */
+.font-icon-2{
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    background: #E02C6D;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    color: white; 
+}
+.h-color{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.Watch-match-area-1 img{
+    width: 567px;
+    height: 550px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+.high-light{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    padding: 100px;
+}
+.margin{
+    margin-bottom: 15px;
+}
+.h-color:hover{
+    color: red;
+}
+.font-icon-2:hover{
+    background-image: linear-gradient(orange, red);
+}
+/*----------------------------------------------
+      highlights match area style end 
+----------------------------------------------- */
+/* -------------------------------
+       footer area style start
+--------------------------------- */
+.footer-area-pic{
+    width: 270px;
+    height: 120px;
+}
+
+.fab{
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 0.6rem;
+    
+}
+.container{
+     text-align: center;
+}
+
+.fa-facebook:hover{
+    color: purple;
+}
+.fa-twitter-square:hover{
+    color: purple;
+}
+.fa-instagram:hover{
+    color: purple;
+}
+.fa-whatsapp-square:hover{
+    color: purple;
+}
+.footer-paragrapg:hover p{
+    color: orangered;
+}
+/* -------------------------------
+     footer area style end 
+------------------------------- */
+/*--------------------------------
+       media Querise start 
+------------------------------ */
+/*-----------------------------
+      Mobile Device start 
+---------------------------- */
+@media only screen and (max-width:688px) {
+    
+    .menu-area{
+        width: 100%;
+    }
+    .menu-datils, .blogs, .high-light, .footer-area-1{
+         grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-style{
+        flex-direction: column;
+    } 
+}
+/*----------------------
+    Mobile Device end 
+------------------------*/
+
+/*-----------------------
+     tablet devices
+-------------------------*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .menu-datils, .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
